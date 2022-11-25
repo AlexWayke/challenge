@@ -1,0 +1,156 @@
+// Null styles ========================
+@import "_null.scss";
+
+// Fonts ==============================
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:regular,500,600,700);
+
+h2 {
+    font-size: 5vw;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+// Colors =============================
+:root {
+    --color-white: #ffffff;
+    --color-white--rgb: 255, 255, 255;
+    --color-main: #0c0822;
+    --color-black: #000000;
+    --color-blue: #5594D6;
+    --color-violet: #D21B9A;
+    --color-dirty: #4d4d4d;
+}
+
+// Main styles ========================
+body {
+    font-family: Plus Jakarta Sans;
+    background-color: var(--color-main);
+    color: var(--color-white);
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.container {
+    max-width: 87.5vw;
+    margin: 0 auto;
+}
+.colored {
+    background: linear-gradient(90deg, var(--color-blue) 5.53%, var(--color-violet) 99.84%);
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    &-btn {
+        display: inline-block;
+        background: linear-gradient(90deg, var(--color-blue) 5.53%, var(--color-violet) 99.84%);
+        color: var(--color-white);
+        font-size: 1.39vw;
+        font-weight: 700;
+        line-height: 1.2em;
+        padding: 1em 2.75em;
+        background-clip: border-box;
+        border-radius: 0.83vw;
+
+    }
+}
+
+// Header =============================
+.header {
+    position: absolute;
+    top: 2.78vw;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    &-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &-logo {
+        // height: 100%;
+        width: fit-content;
+        margin-right: 5vw;
+    }
+    &-nav {
+        display: inline;
+        margin-right: auto;
+        &--list {
+            display: flex;
+            flex-direction: row;
+            gap: 3.75vw;
+        }
+        &--li {
+            font-size: 1.25vw;
+            line-height: 1.2em;
+            cursor: pointer;
+            transition: all .3s ease;
+            &.active {
+                font-weight: 700;
+            }
+            &:hover {
+                color: rgba(var(--color-white--rgb),0.8);
+            }
+        }
+    }
+    &-button {
+        color: var(--color-black);
+        font-size: 1.11vw;
+        font-weight: 700;
+        padding: 1em 2.8em;
+        background-color: var(--color-white);
+        border-radius: 0.83vw;
+        transition: all .3s ease;
+        &:hover {
+            background-color: rgba(var(--color-white--rgb),0.8);
+        }
+    }
+}
+
+// Mainscreen =========================
+.mainscreen {
+padding-top: 12.5vw;
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &-top {
+        display: flex;
+        flex-direction: row;
+    }
+    &-info {
+        flex: 0 0 50%;
+        padding-right: 3.125vw;
+        box-sizing: border-box;
+    }
+    &-name {
+        text-transform: uppercase;
+        font-size: 1.39vw;
+        line-height: 1.2em;
+        font-weight: 700;
+        letter-spacing: 0.64em;
+        margin-bottom: 1.18vw;
+    }
+    &-title {
+        margin-bottom: 1.18vw;
+    }
+    &-text {
+        font-size: 1.04vw;
+        line-height: 1.2em;
+        margin-bottom: 2.43vw;
+    }
+    &-button {
+        margin-bottom: 4.24vw;
+    }
+    &-prises {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &--item {
+        }
+    }
+}
