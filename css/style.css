@@ -213,7 +213,30 @@ body {
 .mainscreen-prises--item img {
   height: 75%;
 }
+.mainscreen-hand {
+  position: relative;
+  flex: 0 0 50%;
+}
+.mainscreen-hand--bg {
+  position: absolute;
+  top: -22%;
+  left: -7%;
+  height: 129%;
+  width: 121%;
+}
+.mainscreen-hand--bg img {
+  width: 100%;
+  height: 100%;
+}
+.mainscreen-hand--img {
+  position: absolute;
+  top: -10%;
+  left: 0;
+}
 
+.count {
+  margin-top: -80px;
+}
 .count .count-wrapper {
   display: flex;
   flex-direction: row;
