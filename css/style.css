@@ -233,6 +233,91 @@ body {
   top: -10%;
   left: 0;
 }
+.mainscreen-track {
+  position: absolute;
+  top: 0;
+  left: 47%;
+  z-index: 20;
+  width: 30vw;
+  height: 50vh;
+}
+.mainscreen-dropcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30vw;
+  width: 15vw;
+  padding: 1vw;
+  background: rgba(var(--color-white--rgb), 0.15);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border-radius: 0.83vw;
+  box-shadow: inset 0px 3px 30px rgba(var(--color-white--rgb), 0.2), inset 0px 0.76px 30px rgba(var(--color-white), 0.2);
+  border: 1px solid var(--color-white);
+}
+.mainscreen-dropcard--top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+  width: 14vw;
+  height: 2vw;
+}
+.mainscreen-dropcard--circles {
+  display: inline-block;
+  flex-direction: row;
+  height: 100%;
+  width: 50%;
+}
+.mainscreen-dropcard--circles span {
+  display: inline-block;
+  height: 2vw;
+  width: 2vw;
+  border-radius: 50%;
+}
+.mainscreen-dropcard--circles span:not(:first-child) {
+  margin-left: -1vw;
+}
+.mainscreen-dropcard--circles span:nth-child(1) {
+  background: rgba(var(--color-white--rgb), 0.9);
+}
+.mainscreen-dropcard--circles span:nth-child(2) {
+  background: rgba(var(--color-white--rgb), 0.7);
+}
+.mainscreen-dropcard--circles span:nth-child(3) {
+  background: rgba(var(--color-white--rgb), 0.5);
+}
+.mainscreen-dropcard--circles span:nth-child(4) {
+  background: rgba(var(--color-white--rgb), 0.3);
+}
+.mainscreen-dropcard--dots {
+  font-size: 2vw;
+}
+.mainscreen-dropcard--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14vw;
+  height: 14vw;
+  margin-bottom: 2vw;
+  overflow: hidden;
+  border-radius: 0.83vw;
+}
+.mainscreen-dropcard--img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mainscreen-dropcard--title {
+  text-align: end;
+  align-self: flex-end;
+  width: 50%;
+  font-size: 1.25vw;
+  line-height: 1.2em;
+  font-weight: 700;
+}
 
 .count {
   margin-top: -80px;
