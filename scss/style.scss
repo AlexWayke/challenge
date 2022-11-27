@@ -111,7 +111,7 @@ body {
 
 // Mainscreen =========================
 .mainscreen {
-padding-top: 12.5vw;
+padding-top: 180px;
     &-wrapper {
         display: flex;
         flex-direction: column;
@@ -120,10 +120,11 @@ padding-top: 12.5vw;
     &-top {
         display: flex;
         flex-direction: row;
+        margin-bottom: 172px;
     }
     &-info {
         flex: 0 0 50%;
-        padding-right: 3.125vw;
+        padding: 60px 3.125vw 70px 0;
         box-sizing: border-box;
     }
     &-name {
@@ -132,18 +133,18 @@ padding-top: 12.5vw;
         line-height: 1.2em;
         font-weight: 700;
         letter-spacing: 0.64em;
-        margin-bottom: 1.18vw;
+        margin-bottom: 17px;
     }
     &-title {
-        margin-bottom: 1.18vw;
+        margin-bottom: 17px;
     }
     &-text {
         font-size: 1.04vw;
         line-height: 1.2em;
-        margin-bottom: 2.43vw;
+        margin-bottom: 35px;
     }
     &-button {
-        margin-bottom: 4.24vw;
+        margin-bottom: 60px;
     }
     &-prises {
         display: flex;
@@ -151,6 +152,53 @@ padding-top: 12.5vw;
         align-items: center;
         justify-content: space-between;
         &--item {
+            height: 2.78vw;
+            & img {
+                height: 75%;
+            }
         }
+    }
+}
+
+// Count ==============================
+.count {
+    .count-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 1.74vw;
+        border: 1px solid rgba(var(--color-white--rgb),0.33);
+        background: rgba(var(--color-white--rgb),0.1);
+        box-shadow: 0px -3.7px 22.2px rgba(6, 5, 31, 0.1), inset 0px 0.7px 0.37px rgba(var(--color-white--rgb), 0.5);
+        backdrop-filter: blur(6px);
+    }
+    .count-item {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        flex: 0 0 25%;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        box-sizing: border-box;
+        &:not(:first-child)::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            background: linear-gradient(180deg, #5594D6 5.53%, #D21B9A 99.84%)
+        }
+    }
+    .count-item--number {
+        font-weight: 700;
+        font-size: 3.125vw;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+    .count-item--text {
+        font-size: 1.04vw;
+        line-height: 1.2em;
     }
 }
