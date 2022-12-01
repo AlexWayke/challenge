@@ -614,9 +614,44 @@ body {
   font-size: 1.11vw;
   line-height: 1.2em;
 }
-.why-item--btn circle {
+.why-item--btn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  min-width: 40px;
+  transition: all 0.1s ease;
+}
+.why-item--btn span {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--color-blue) 0%, var(--color-violet) 100%);
+  width: 17px;
+  height: 2px;
+  border-radius: 2px;
+  margin-right: -6px;
   transition: all 0.3s ease;
 }
-.why-item--btn:hover circle {
-  opacity: 0;
+.why-item--btn:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: linear-gradient(to right, var(--color-blue), var(--color-violet));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  transition: all 0.3s ease;
+  height: 40px;
+  width: 40px;
+}
+.why-item--btn:hover span {
+  width: 23px;
+}
+.why-item--btn:hover:before {
+  border-radius: 10%;
 }
