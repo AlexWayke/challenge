@@ -662,31 +662,48 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 120px;
 }
 .protocols .protocols-title {
   margin-bottom: 100px;
 }
+.protocols .protocols-slider {
+  position: relative;
+  margin-left: 4.51vw;
+}
+.protocols .protocols-slider::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
 .slider {
+  width: 100%;
   position: relative;
 }
-.slider .slider-wrapper {
+.slider-wrapper {
   overflow: hidden;
   padding-top: 14px;
   box-sizing: border-box;
 }
-.slider .slider-items {
+.slider-items {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 3.125vw;
   transition: transform ease 0.5s;
   will-change: transform;
 }
-.slider .slider-item {
+.slider-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 0 0 23.61vw;
 }
-.slider .slider-item .slider-item--icon {
+.slider-item--icon {
   position: relative;
   display: flex;
   justify-content: center;
@@ -701,13 +718,13 @@ body {
   margin-bottom: 160px;
   border-radius: 1.04vw;
 }
-.slider .slider-item .slider-item--icon img {
+.slider-item--icon img {
   width: 2.29vw;
   height: 2.29vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.slider .slider-item .slider-item--icon::before {
+.slider-item--icon::before {
   content: "";
   position: absolute;
   top: -14px;
@@ -719,7 +736,7 @@ body {
   z-index: -10;
   border: 2px solid rgba(var(--color-white--rgb), 0.3);
 }
-.slider .slider-item .slider-item--card {
+.slider-item--card {
   display: flex;
   flex-direction: column;
   width: 20.48vw;
@@ -729,25 +746,25 @@ body {
   background-color: var(--color-slider--first);
   border-radius: 1.39vw;
 }
-.slider .slider-item .slider-item--title {
+.slider-item--title {
   font-weight: 700;
   font-size: 2.43vw;
   line-height: 1.2em;
   margin-bottom: 22px;
 }
-.slider .slider-item .slider-item--list {
+.slider-item--list {
   font-size: 1.25vw;
   line-height: 1.2em;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.slider .slider-item .slider-item--list li {
+.slider-item--list li {
   position: relative;
   display: inline-block;
   margin-left: 28px;
 }
-.slider .slider-item .slider-item--list li::before {
+.slider-item--list li::before {
   content: "";
   position: absolute;
   top: 8px;
