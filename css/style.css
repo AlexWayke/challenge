@@ -17,6 +17,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   line-height: 1;
+  cursor: default;
 }
 
 ol, ul {
@@ -415,42 +416,6 @@ body {
 .count .count-item--text {
   font-size: 1.04vw;
   line-height: 1.2em;
-}
-
-.demo {
-  padding-top: 150px;
-  margin-bottom: 90px;
-}
-.demo .demo-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.demo .demo-title {
-  text-align: center;
-  width: 65%;
-  margin-bottom: 35px;
-}
-.demo .demo-btn {
-  margin-bottom: 80px;
-}
-.demo .demo-preview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 2.22vw;
-  border: 1px solid var(--color-white);
-}
-.demo .demo-preview img {
-  margin: 1.73vw;
-  width: 100%;
-  border-radius: 0.83vw;
 }
 
 .features {
